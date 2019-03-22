@@ -35,8 +35,8 @@ namespace imageresizer.Converter
             // http://localhost:32772/api/images/resize/?name=image.big.jpg&format=png&width=500            
             var builder = new StringBuilder();
             builder.Append($"{fileName}.");
-            builder.Append($"w_{Width}");
-            builder.Append($",h_{Height}");
+            builder.Append($"w_{widthKey}");
+            builder.Append($",h_{heightKey}");
             builder.Append($",q_{Quality}");
             builder.Append(GetExtension());
             // image.big.w_500,h_0,q_100.png
